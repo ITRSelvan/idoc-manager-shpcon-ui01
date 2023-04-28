@@ -29,6 +29,11 @@ sap.ui.define([
 
                 // set the device model
                 this.setModel(models.createDeviceModel(), "device");
+
+
+                   // set the globalProperties model
+			    const oGlobalModel = new sap.ui.model.json.JSONModel({selIdocs: ""});
+                this.setModel(oGlobalModel, "globalProperties");
             }
         });
     }
